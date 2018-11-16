@@ -52,4 +52,7 @@ HouseTag
 │   │  
 
 ```
-
+### 运行截图
+![图1](https://github.com/cfan1236/HouseTag/blob/master/doc/img/20181116234957.png)
+![图2](https://github.com/cfan1236/HouseTag/blob/master/doc/img/20181116234907.png)
+![图3](https://github.com/cfan1236/HouseTag/blob/master/doc/img/20181116234947.png)
