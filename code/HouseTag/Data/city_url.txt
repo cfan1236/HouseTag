@@ -1,0 +1,17 @@
+武汉,https://wh.fang.anjuke.com/,http://wuhan.newhouse.fang.com/
+北京,https://bj.fang.anjuke.com/,http://newhouse.fang.com/
+上海,https://sh.fang.anjuke.com/,http://sh.newhouse.fang.com/
+深圳,https://sz.fang.anjuke.com/,http://sz.newhouse.fang.com/
+广州,https://gz.fang.anjuke.com/,http://gz.newhouse.fang.com/
+天津,https://tj.fang.anjuke.com/,http://tj.newhouse.fang.com/
+成都,https://cd.fang.anjuke.com/,http://cd.newhouse.fang.com/
+杭州,https://hz.fang.anjuke.com/,http://hz.newhouse.fang.com/
+黄冈,https://hg.fang.anjuke.com/,http://huanggang.newhouse.fang.com/
+宜昌,https://yi.fang.anjuke.com/,http://yc.newhouse.fang.com/
+荆州,https://jzh.fang.anjuke.com/,http://jingzhou.newhouse.fang.com/
+佛山,https://fs.fang.anjuke.com/,http://fs.newhouse.fang.com/
+东莞,https://dg.fang.anjuke.com/,http://dg.newhouse.fang.com/
+惠州,https://hui.fang.anjuke.com/,http://huizhou.newhouse.fang.com/
+厦门,https://xm.fang.anjuke.com/,http://xm.newhouse.fang.com/
+南京,https://nj.fang.anjuke.com/,http://nanjing.newhouse.fang.com/
+苏州,https://su.fang.anjuke.com/,http://suzhou.newhouse.fang.com/
