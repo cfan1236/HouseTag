@@ -13,11 +13,12 @@
 
 ### 使用
 
- 1. 开发说明
+ 1. 开发说明  
 程序是使用C# winfrom 进行开发的;使用.NetFramework4.5
 
- 2. 安装与使用
-双击==HouseTag.exe==即可运行该程序。
+
+ 2. 安装与使用  
+双击==HouseTag.exe==即可运行该程序。  
 如果程序无法运行请先下载.NetFramework4.5进行安装后再使用。下载地址:[微软官方下载](https://www.microsoft.com/en-us/download/details.aspx?id=42642)。如果是win10系统一般不需要安装。
 
 ### 项目目录
