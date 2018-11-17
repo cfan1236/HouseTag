@@ -8,6 +8,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using HouseTag.Model;
 using HouseTag.model;
+using System.IO;
 
 namespace HouseTag.Helper
 {
@@ -57,6 +58,15 @@ namespace HouseTag.Helper
                                     break;
                                 }
                             }
+                        }
+                        if (purl.Contains("?"))
+                        {
+                            var temp_url = purl.Split('?')[0];
+                            if (temp_url[temp_url.Length - 1] != '/')
+                            {
+                                temp_url += "/";
+                            }
+                            purl = temp_url;
                         }
                         //楼盘地址
                         var pAddress = item.SelectSingleNode(".//div[@class='address']").InnerText.Trim().Replace("\n", "").Replace("\t", "");
@@ -206,13 +216,16 @@ namespace HouseTag.Helper
             while ((pageIndex <= param.maxPageIndex) || (param.maxPageIndex == 0))
             {
                 //判断是否有某些线程已经跑到了数据的最后一页 避免不必要的请求
-                if (endPageIndex != 0 && pageIndex > endPageIndex)
+                if (endPageIndex != 0 && pageIndex > endPageIndex && param.maxPageIndex != 0)
                 {
+                    pageIndex++;
                     continue;
                 }
                 var postParam = $"page={pageIndex}&pagesize={param.pageSize}&dianpingNewcode={param.id}";
                 int status = 0;
+
                 var html = NetHttpHelper.HttpPostRequest(url, postParam, out status);
+
                 if (status == 200)
                 {
                     var list = JsonConvert.DeserializeObject<model.CommentResultFtx>(html);

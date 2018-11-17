@@ -38,7 +38,7 @@ namespace HouseTag
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "异常消息", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                MessageBox.Show(ex.Message + "\r\n 请重新尝试", "异常消息", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
                 txtSearchProject.Enabled = false;
                 btnStart.Enabled = false;
                 lblStatusTips.Visible = true;
@@ -247,8 +247,13 @@ namespace HouseTag
                 {
                     Invoke(new Action(() =>
                     {
+#if DEBUG
                         MessageBox.Show(ex.Message + "\r\n" + ex.StackTrace, "异常消息", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+#else
+                        MessageBox.Show(ex.Message + "\r\n 请重新尝试", "异常消息", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+#endif
                         btnStart.Enabled = true;
+                        txtSearchProject.Enabled = true;
                         lblStatusTips.Text = "获取评论失败";
 
                     }));
@@ -386,10 +391,11 @@ namespace HouseTag
 
 
                 }
-                txtSearchProject.Focus();
+
                 //启用开启按钮
                 btnStart.Enabled = true;
                 txtSearchProject.Enabled = true;
+                txtSearchProject.Focus();
             }));
 
         }
@@ -431,7 +437,7 @@ namespace HouseTag
                     txtComment.Text += item.author + " " + item.date.ToString("yyyy-MM-dd") + "\r\n\r\n" + item.content + "\r\n\r\n";
                 }
             }
-
+            txtSearchProject.Focus();
         }
 
         /// <summary>

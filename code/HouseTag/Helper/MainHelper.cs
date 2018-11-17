@@ -12,7 +12,6 @@ namespace HouseTag.Helper
     public class MainHelper
     {
 
-
         /// 城市url
         private static List<string> city_url = new List<string>();
         /// 标签字典
