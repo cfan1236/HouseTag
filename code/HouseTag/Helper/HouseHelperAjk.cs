@@ -139,12 +139,12 @@ namespace HouseTag.Helper
                     {
                         break;
                     }
-                    ////查找是否还有下一页 如果没有则证明是最后一页
-                    //var next_page = doc.DocumentNode.SelectNodes(".//a[@class='next-page next-link']");
-                    //if (next_page == null || next_page.Count == 0)
-                    //{
-                    //    break;
-                    //}
+                    //查找是否还有下一页 如果没有则证明是最后一页
+                    var next_page = doc.DocumentNode.SelectNodes(".//a[@class='next-page next-link']");
+                    if (next_page == null || next_page.Count == 0)
+                    {
+                        break;
+                    }
                 }
 
                 page++;
