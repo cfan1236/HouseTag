@@ -16,7 +16,7 @@
 ### 使用
 
  1. 开发说明  
-程序是使用C# winfrom 进行开发的;使用.NetFramework4.5
+程序是使用C# winform 进行开发的;使用.NetFramework4.5
 
 
  2. 安装与使用  
